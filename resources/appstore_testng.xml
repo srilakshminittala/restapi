@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="test-assesment" parallel="methods" verbose="1" thread-count="1">
+	
+	<parameter name ="url" value="https://istheapplestoredown.com/api/v1/status/worldwide" />
+
+    <test name="applestore api">
+		<classes>
+			<class name="restapi.AppleStoreDownAPI"></class>
+		</classes> 
+    </test>
+ 
+</suite>
